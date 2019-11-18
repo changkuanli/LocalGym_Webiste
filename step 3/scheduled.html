@@ -77,7 +77,7 @@
       width: 100%;
     }
 
-    #scheduledclass td, #scheduled th {
+    #scheduledclass td, #scheduledclass th {
       border: 1px solid #ddd;
       padding: 8px;
     }
@@ -105,8 +105,8 @@
                   <li class="nav-item"><a class="nav-link" href="user_login.html">User Login</a></li>
                   <li class="nav-item"><a class="active" href="scheduled.html">My Class Schedule</a></li>
                   <li class="nav-item"><a class="nav-link" href= "schedule_class.html">Avaliable Classes</a></li>
+                  <li class="nav-item"><a class="nav-link" href= "instructor_certs.html">Instructors</a></li>
                   <li class="nav-item"><a class="nav-link" href="instructor_login.html">Instructor Login</a></li>
-                  <input type="text" placeholder="Search..">
               </ul>
           </nav>
       </div>
@@ -115,22 +115,24 @@
   </body>
 
   <table id= "scheduledclass">
-    <tr>
+    <trhead>
       <th>Class Name</th>
       <th>Date</th>
       <th>Time</th>
       <th>Room</th>
       <th>Instructor</th>
       <th>Cancel Class</th>
-    </tr>
-    <tr>
+    </trhead>
+    <trbody>
+      <tr>
       <td>Yoga</td>
       <td>2019-10-26</td>
       <td>12:00:00</td>
       <td>1</td>
       <td>Noah</td>
       <td><input type="checkbox" unchecked="checked" name="cancel"></td>
-    </tr>
+      </tr>
+    </trbody>
   </table>
   <br>
   <label>

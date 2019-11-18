@@ -101,8 +101,8 @@
                 <li class="nav-item"><a class="nav-link" href="user_login.html">User Login</a></li>
                 <li class="nav-item"><a class="nav-link" href="scheduled.html">My Class Schedule</a></li>
                 <li class="nav-item"><a class="active" href= "schedule_class.html">Avaliable Classes</a></li>
+                <li class="nav-item"><a class="nav-link" href= "instructor_certs.html">Instructors</a></li>
                 <li class="nav-item"><a class="nav-link" href="instructor_login.html">Instructor Login</a></li>
-                <input type="text" placeholder="Search..">
             </ul>
         </nav>
     </div>
@@ -114,22 +114,48 @@
 
 
 <table id="classschedule">
-    <tr>
+    <trhead>
         <th>Class Name</th>
         <th>Date</th>
         <th>Time</th>
         <th>Room</th>
         <th>Instructor</th>
-        <th>Rating</th>
         <th>Schedule</th>
-    </tr>
+    </trhead>
+
+
+
+    <trbody>
+      {% for r in rows %}
+      <tr>
+        <td>
+          {{ r.0 }}
+        </td>
+        <td>
+          {{ r[1] }}
+        </td>
+        <td>
+          {{r{ [2] }}
+        </td>
+        <td>
+          {{r{ [3] }}
+        </td>
+        <td>
+          {{r{ [4] }}
+        </td>
+      </tr>
+    </trbody>
+
+
+
+
+
     <tr>
         <td>Yoga</td>
         <td>2019-10-26</td>
         <td>12:00:00</td>
         <td>1</td>
-        <td><span class="noah"><a href="instructor_certs.html">Noah</a></span></td>
-        <td>5</td>
+        <td>Noah</td>
         <td><input type="checkbox" unchecked="checked" name="schedule"></td>
     </tr>
     <tr>
@@ -137,8 +163,7 @@
         <td>2019-10-26</td>
         <td>13:00:00</td>
         <td>2</td>
-        <td><span class="michael"><a href="instructor_certs.html">Michael</a></span></td>
-        <td>4</td>
+        <td>Michael</td>
         <td><input type="checkbox" unchecked="checked" name="schedule"></td>
     </tr>
     <tr>
@@ -146,8 +171,7 @@
         <td>2019-10-26</td>
         <td>14:00:00</td>
         <td>3</td>
-        <td><span class="josh"><a href="instructor_certs.html">Josh</a></span></td>
-        <td>5</td>
+        <td>Josh</td>
         <td><input type="checkbox" unchecked="checked" name="schedule"></td>
     </tr>
     <tr>
@@ -155,8 +179,7 @@
         <td>2019-10-26</td>
         <td>15:00:00</td>
         <td>4</td>
-        <td><span class="noah"><a href="instructor_certs.html">Noah</a></span></td>
-        <td>5</td>
+        <td>Noah</td>
         <td><input type="checkbox" unchecked="checked" name="schedule"></td>
     </tr>
 </table>
